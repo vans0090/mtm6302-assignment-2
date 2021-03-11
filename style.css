@@ -1,0 +1,30 @@
+body {
+    margin: auto;
+}
+
+#container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: calc(100vh / 3) calc(100vh / 3) calc(100vh / 3);
+    align-items: center;
+    justify-content: center;
+    gap: 0.0025rem;
+}
+
+#display {
+    font-size: 2rem;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0.5rem;
+}
+
+.largeimage{
+    width: 80%;
+    height: 100%
+}
+
+.imagereverse{
+    width: 50%;
+    height: 95%;
+}
