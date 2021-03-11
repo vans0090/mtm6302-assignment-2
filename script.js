@@ -4,34 +4,35 @@ const $display= document.getElementById('display')
 let images = []
 
 for (let i = 1 ; i <= 12; i++ ) {
-    images.push(`<img src="/images/${i}.jpg" width="50%" height="95%" class="image">`)
+    images.push(`<img src="/images/${i}.jpg" id="${i}" width="50%" height="95%" class="image">`)
 }
 
 $gallery.innerHTML = images.join('')
-console.log(images)
+// console.log(images)
  
-// const listoftitles = [
-//     `This is the title of image 1`,
-//     `This is the title of image 2`,
-//     `This is the title of image 3`,
-//     `This is the title of image 4`,
-//     `This is the title of image 5`,
-//     `This is the title of image 6`,
-//     `This is the title of image 7`,
-//     `This is the title of image 8`,
-//     `This is the title of image 9`,
-//     `This is the title of image 10`,
-//     `This is the title of image 11`,
-//     `This is the title of image 12`
-// ]
+const listoftitles = [
+    `Image 1: Man with a laptop`,
+    `Image 2: Girl by the window`,
+    `Image 3: Two boys in a room`,
+    `Image 4: Pedestrian crossing in front of a building`,
+    `Image 5: Man working on computer`,
+    `Image 6: Top glass view of a boy on laptop`,
+    `Image 7: Woman working in a corner`,
+    `Image 8: Lady Boss tag`,
+    `Image 9: Two business-man dicussing over phone`,
+    `Image 10: Desk of a worker`,
+    `Image 11: Coffee table with a laptop on`,
+    `Image 12: Ant's eye view of a building`
+]
 
-// function displayTitle () {
-//     for ( let i = 0; i < 12; i++) {
-//         return $display.textContent = listoftitles[i]
-//     }
-// }
+function displayTitle (event) {
+     
+        // console.log(event.target.getAttribute('id'))
+        $display.textContent = listoftitles[event.target.getAttribute('id')-1]
+    }
 
-// $gallery.addEventListener ('click', displayTitle)
+
+$gallery.addEventListener ('click', displayTitle)
 
 $gallery.addEventListener ('click', function (event){
     const $image = event.target.closest('.image') 

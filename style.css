@@ -7,9 +7,9 @@ body {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: calc(100vh / 3) calc(100vh / 3) calc(100vh / 3);
-    align-items: center;
-    justify-content: center;
     gap: 0.0025rem;
+    justify-content:center;
+    align-items: center;
 }
 
 #display {
@@ -24,7 +24,10 @@ body {
     height: 100%
 }
 
-.imagereverse{
-    width: 50%;
-    height: 95%;
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 2rem;
 }
+
