@@ -10,6 +10,7 @@ body {
     gap: 0.0025rem;
     justify-content:center;
     align-items: center;
+    
 }
 
 #display {
@@ -29,5 +30,10 @@ p{
     margin: auto;
     text-align: center;
     padding-bottom: 2rem;
+}
+
+.image{
+    text-align: center;
+    margin: auto;
 }
 

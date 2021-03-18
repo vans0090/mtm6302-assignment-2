@@ -22,7 +22,8 @@ const listoftitles = [
     `Image 9: Two business-man dicussing over phone`,
     `Image 10: Desk of a worker`,
     `Image 11: Coffee table with a laptop on`,
-    `Image 12: Ant's eye view of a building`
+    `Image 12: Ant's eye view of a building`,
+    `Click any image to display the title`
 ]
 
 function displayTitle (event) {
