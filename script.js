@@ -1,15 +1,18 @@
+//creating variable to retrieve HTML elements
+
 const $gallery = document.getElementById('container')
 const $display= document.getElementById('display')
 
-let images = []
+let images = []   //array to push all the images into one
 
+//loop to add images dynamically into the browser
 for (let i = 1 ; i <= 12; i++ ) {
     images.push(`<img src="/images/${i}.jpg" id="${i}" width="50%" height="95%" class="image">`)
 }
 
 $gallery.innerHTML = images.join('')
-// console.log(images)
  
+// array that stores the list of titles which will be displayed when an image is clicked
 const listoftitles = [
     `Image 1: Man with a laptop`,
     `Image 2: Girl by the window`,
@@ -26,15 +29,16 @@ const listoftitles = [
     `Click any image to display the title`
 ]
 
+//function to display the respective title
 function displayTitle (event) {
-     
-        // console.log(event.target.getAttribute('id'))
         $display.textContent = listoftitles[event.target.getAttribute('id')-1]
     }
 
-
+//adding event listener to the images with the title function
 $gallery.addEventListener ('click', displayTitle)
 
+
+//adding event listener to enlarge te image sizes by using the classes
 $gallery.addEventListener ('click', function (event){
     const $image = event.target.closest('.image') 
 
@@ -43,6 +47,7 @@ $gallery.addEventListener ('click', function (event){
     }
 })
 
+//adding double click event to return the images back to their normal size
 $gallery.addEventListener ('dblclick', function (event){
     const $image = event.target.closest('.image') 
 

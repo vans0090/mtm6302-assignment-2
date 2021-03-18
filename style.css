@@ -2,6 +2,7 @@ body {
     margin: auto;
 }
 
+/* defining the grid on the container to display images */
 #container {
     margin: auto;
     display: grid;
@@ -13,6 +14,7 @@ body {
     
 }
 
+/* Font styling for the display title */
 #display {
     font-size: 2rem;
     text-align: center;
@@ -20,11 +22,13 @@ body {
     margin: 0.5rem;
 }
 
+/* class to enlarge the image */
 .largeimage{
     width: 80%;
     height: 100%
 }
 
+/* styling the p tag (general info) */
 p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: auto;
@@ -32,6 +36,7 @@ p{
     padding-bottom: 2rem;
 }
 
+/* aligning images in the center */
 .image{
     text-align: center;
     margin: auto;
